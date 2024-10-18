@@ -51,6 +51,17 @@ namespace DAO
 
             return ds.Tables[nombreTabla];
         }
+        public bool existe(string consultaSQL)
+        {
 
+            SqlConnection conexion = obtenerConexion();
+            SqlCommand comando = new SqlCommand(consultaSQL, conexion);
+            SqlDataReader datos = comando.ExecuteReader();
+            if (datos.Read())
+            {
+                return true;
+            }
+            else { return false; }
+        }
     }
 }
