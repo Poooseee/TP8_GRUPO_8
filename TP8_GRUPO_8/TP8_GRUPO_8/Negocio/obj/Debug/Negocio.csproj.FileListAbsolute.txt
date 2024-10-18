@@ -9,3 +9,14 @@ C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Ne
 C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.dll
 C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.pdb
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.dll
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.pdb
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.dll
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.dll
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.pdb
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.pdb
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.dll
+C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.pdb

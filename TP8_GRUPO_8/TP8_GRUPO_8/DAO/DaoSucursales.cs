@@ -16,6 +16,23 @@ namespace DAO
                 "inner join Provincia on Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia";
             return ad.obtenerTabla("Sucursales", consulta);
         }
-        
+
+        public int AgregarSucursal(string NombreSucursal, string DescripcionSucursal, int IdProvinciaSucursal, string DireccionSucursal)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            string consultaAgregarSucursal = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+               "VALUES ('" + NombreSucursal + "','" + DescripcionSucursal + "'," + IdProvinciaSucursal + ",'" + DireccionSucursal + "')";
+            return accesoDatos.EjecutarConsulta(consultaAgregarSucursal);
+        }
+
+        public DataTable buscarSucursalPorID(int idSucursal)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE," +
+                "DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal" +
+                " WHERE Id_Sucursal = " + idSucursal;
+
+            return ad.obtenerTabla("gvSucursales", consulta);
+        }
     }
 }

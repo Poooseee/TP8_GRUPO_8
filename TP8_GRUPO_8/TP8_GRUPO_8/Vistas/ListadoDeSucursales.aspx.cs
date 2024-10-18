@@ -22,5 +22,15 @@ namespace Vistas
                 gvSucursales.DataBind();
             }
         }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            if (txtSucursal.Text.Trim().Length > 0)
+            {
+                NegocioSucursal negocioSucursal = new NegocioSucursal();
+                //completar
+                txtSucursal.Text = "";
+            }
+        }
     }
 }
