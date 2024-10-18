@@ -67,13 +67,17 @@
                     <asp:TextBox ID="txtSucursal" runat="server" Width="173px"></asp:TextBox>
                 </td>
                 <td class="auto-style10">
-                    <asp:Button ID="Button1" runat="server" CssClass="auto-style8" Text="Button" />
+                    <asp:Button ID="btnFiltrar" runat="server" CssClass="auto-style8" Text="Filtrar" />
                 </td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Text="Button" />
+                    <asp:Button ID="btnTodos" runat="server" CssClass="auto-style9" Text="Mostrar todos" />
                 </td>
             </tr>
         </table>
+        <p>
+            <asp:GridView ID="gvSucursales" runat="server">
+            </asp:GridView>
+        </p>
     </form>
 </body>
 </html>

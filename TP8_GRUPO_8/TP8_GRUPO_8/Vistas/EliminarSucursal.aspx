@@ -52,7 +52,11 @@
                 <td class="auto-style7">
                     <asp:TextBox ID="txtIdSucursal" runat="server" Width="237px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="revEliminar" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^-?\d+$">Ingrese un número válido</asp:RegularExpressionValidator>
+                </td>
             </tr>
         </table>
     </form>
