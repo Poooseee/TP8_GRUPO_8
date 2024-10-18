@@ -1,0 +1,6 @@
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\bin\Debug\Entidades.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\bin\Debug\Entidades.pdb
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.pdb

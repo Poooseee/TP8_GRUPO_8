@@ -11,7 +11,7 @@ namespace Negocio
     {
         public DataTable obtenerTablaProvincias()
         {
-        DaoProvincias dao = new DaoProvincias();
+            DaoProvincias dao = new DaoProvincias();
             return dao.ObtenerProvincias();
         }
 

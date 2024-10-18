@@ -1,0 +1,11 @@
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.pdb
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.pdb
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.pdb
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.dll
+C:\Users\agusp\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.pdb

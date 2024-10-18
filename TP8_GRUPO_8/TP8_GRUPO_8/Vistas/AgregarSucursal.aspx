@@ -31,6 +31,7 @@
             width: 99%;
         }
         </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -58,6 +59,7 @@
                     </td>
                     <td class="auto-style8">
                         <asp:TextBox ID="txtNombre" runat="server" Width="189px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -66,6 +68,7 @@
                     </td>
                     <td class="auto-style8">
                         <asp:TextBox ID="txtDescripcion" runat="server" Height="71px" Width="186px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -82,7 +85,8 @@
                         <asp:Label ID="Direccion" runat="server" Text="Direccion:"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txtDireccion" runat="server" Height="40px" Width="184px"></asp:TextBox>
+                        <asp:TextBox ID="txtDireccion" runat="server" Height="21px" Width="184px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
