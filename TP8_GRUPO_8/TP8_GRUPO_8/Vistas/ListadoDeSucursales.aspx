@@ -75,7 +75,14 @@
             </tr>
         </table>
         <p>
-            <asp:GridView ID="gvSucursales" runat="server">
+            <asp:GridView ID="gvSucursales" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="Id_Sucursal" HeaderText="Id_Sucursal" />
+                    <asp:BoundField DataField="NombreSucursal" HeaderText="Nombre" />
+                    <asp:BoundField DataField="DescripcionSucursal" HeaderText="Descripcion" />
+                    <asp:BoundField DataField="DescripcionProvincia" HeaderText="Provincia" />
+                    <asp:BoundField DataField="DireccionSucursal" HeaderText="Direccion" />
+                </Columns>
             </asp:GridView>
         </p>
     </form>

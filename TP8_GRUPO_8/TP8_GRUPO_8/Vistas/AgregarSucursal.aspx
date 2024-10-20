@@ -78,6 +78,7 @@
                     <td class="auto-style8">
                         <asp:DropDownList ID="ddlProvincia" runat="server" Height="16px" Width="191px">
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="RequiredFieldValidator" InitialValue="0">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

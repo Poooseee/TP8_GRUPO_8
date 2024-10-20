@@ -22,7 +22,10 @@ namespace Vistas
            
             negSuc.eliminarSucursal(idSucursal);
 
-            //TERMINAR
+            //MOSTRAR ESTO UNICAMENTE SI LA SUCURSAL EXISTE
+            lblEliminado.Text = "La sucursal ha sido eliminada";
+
+            //HAY QUE VERIFICAR SI LA SUCURSAL EXISTE, Y NOTIFICAR SI NO ES ASÍ CON EL LBL DE ARRIBA
         }
     }
 }

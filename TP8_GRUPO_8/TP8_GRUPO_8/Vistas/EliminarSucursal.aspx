@@ -51,12 +51,22 @@
                 </td>
                 <td class="auto-style7">
                     <asp:TextBox ID="txtIdSucursal" runat="server" Width="237px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEliminar" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                 </td>
                 <td>
                     <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:RegularExpressionValidator ID="revEliminar" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^-?\d+$">Ingrese un número válido</asp:RegularExpressionValidator>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    <asp:Label ID="lblEliminado" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
             </tr>
         </table>
     </form>
