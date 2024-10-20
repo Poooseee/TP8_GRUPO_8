@@ -19,7 +19,7 @@ namespace Vistas
         {
             NegocioSucursal negSuc = new NegocioSucursal();
             int idSucursal = int.Parse(txtIdSucursal.Text);
-            negSuc.eliminarSucursal(idSucursal);
+           
             //TERMINAR
         }
     }
