@@ -16,15 +16,19 @@ namespace Vistas
         {
             if(!IsPostBack)
             {
-                NegocioProvincia prov = new NegocioProvincia();
-                DataTable dt = new DataTable();
-                dt = prov.obtenerTablaProvincias();
-                ddlProvincia.DataSource = dt;
-                ddlProvincia.DataTextField = "DescripcionProvincia";
-                ddlProvincia.DataValueField = "ID_Provincia";
-                ddlProvincia.DataBind();
-                ddlProvincia.Items.Insert(0, new ListItem("Seleccione una provincia", "0"));
+                cargarProvinciasAlDDL();
             }
+        }
+        public void cargarProvinciasAlDDL()
+        {
+            NegocioProvincia prov = new NegocioProvincia();
+            DataTable dt = new DataTable();
+            dt = prov.obtenerTablaProvincias();
+            ddlProvincia.DataSource = dt;
+            ddlProvincia.DataTextField = "DescripcionProvincia";
+            ddlProvincia.DataValueField = "ID_Provincia";
+            ddlProvincia.DataBind();
+            ddlProvincia.Items.Insert(0, new ListItem("Seleccione una provincia", "0"));
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)

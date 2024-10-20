@@ -25,8 +25,13 @@ namespace Negocio
         public int agregarSucursal(string NombreSucursal, string DescripcionSucursal, int IdProvinciaSucursal, string DireccionSucursal)
         {
             int filas;
+            Sucursal suc = new Sucursal();
+            suc.NombreSucursal1 = NombreSucursal;
+            suc.DescripcionSucursal1 = DescripcionSucursal;
+            suc.IdProvinciaSucursal1 = IdProvinciaSucursal;
+            suc.DireccionSucursal1 = DireccionSucursal;
             DaoSucursales Ds = new DaoSucursales();
-            filas = Ds.AgregarSucursal(NombreSucursal, DescripcionSucursal, IdProvinciaSucursal, DireccionSucursal);
+            filas = Ds.AgregarSucursal(suc);
             return filas;
         }
         
@@ -38,13 +43,9 @@ namespace Negocio
 
         public int eliminarSucursal(int idSucursal)
         {
-            string sql = "SELECT 1 FROM NombreDeLaTabla WHERE IdSucursal = " + idSucursal;
-
-            int filas;
-            AccesoDatos ad = new AccesoDatos();
+            int filas;  
             DaoSucursales ds = new DaoSucursales();
-
-            bool existe = ad.existe(sql);
+            bool existe = ds.ExisteSucursal(idSucursal);
 
             if (existe)
             {
@@ -56,7 +57,7 @@ namespace Negocio
                 }
                 else
                 {
-                    return 0; //NO SE PUDO ELIMINAR
+                    return -1; //NO SE PUDO ELIMINAR
                 }
             }
             else

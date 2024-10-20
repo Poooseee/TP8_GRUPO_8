@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -17,12 +18,16 @@ namespace DAO
                 "inner join Provincia on Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia";
             return ad.obtenerTabla("Sucursales", consulta);
         }
+        public bool ExisteSucursal(int id)
+        {
+            return ad.existe("SELECT * FROM Sucursal WHERE Id_Sucursal = " + id);
+        }
 
-        public int AgregarSucursal(string NombreSucursal, string DescripcionSucursal, int IdProvinciaSucursal, string DireccionSucursal)
+        public int AgregarSucursal(Sucursal suc)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
             string consultaAgregarSucursal = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
-               "VALUES ('" + NombreSucursal + "','" + DescripcionSucursal + "'," + IdProvinciaSucursal + ",'" + DireccionSucursal + "')";
+               "VALUES ('" + suc.NombreSucursal1 + "','" + suc.DescripcionSucursal1 + "'," + suc.IdProvinciaSucursal1 + ",'" + suc.DireccionSucursal1 + "')";
             return accesoDatos.EjecutarConsulta(consultaAgregarSucursal);
         }
 

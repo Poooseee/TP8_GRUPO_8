@@ -15,12 +15,16 @@ namespace Vistas
         {
             if (!IsPostBack)
             {
-                NegocioSucursal ns = new NegocioSucursal();
-                DataTable dt = new DataTable();
-                dt = ns.ObtenerTablaSucursales();
-                gvSucursales.DataSource = dt;
-                gvSucursales.DataBind();
+                cargarTodasLasSucursales();
             }
+        }
+        public void cargarTodasLasSucursales()
+        {
+            NegocioSucursal ns = new NegocioSucursal();
+            DataTable dt = new DataTable();
+            dt = ns.ObtenerTablaSucursales();
+            gvSucursales.DataSource = dt;
+            gvSucursales.DataBind();
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
@@ -42,12 +46,7 @@ namespace Vistas
 
         protected void btnTodos_Click(object sender, EventArgs e)
         {
-            NegocioSucursal negocioSucursal = new NegocioSucursal();
-            DataTable dt = new DataTable();
-            dt = negocioSucursal.ObtenerTablaSucursales();
-
-            gvSucursales.DataSource = dt;
-            gvSucursales.DataBind();
+            cargarTodasLasSucursales();
            
         }
     }
