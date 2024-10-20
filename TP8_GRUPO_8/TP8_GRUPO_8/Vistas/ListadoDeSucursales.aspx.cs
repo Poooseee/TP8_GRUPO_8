@@ -39,5 +39,16 @@ namespace Vistas
                 txtSucursal.Text = "";
             }
         }
+
+        protected void btnTodos_Click(object sender, EventArgs e)
+        {
+            NegocioSucursal negocioSucursal = new NegocioSucursal();
+            DataTable dt = new DataTable();
+            dt = negocioSucursal.ObtenerTablaSucursales();
+
+            gvSucursales.DataSource = dt;
+            gvSucursales.DataBind();
+           
+        }
     }
 }

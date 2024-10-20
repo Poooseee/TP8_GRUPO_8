@@ -31,3 +31,14 @@ C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj
 C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.dll
 C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.dll
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.dll
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\DAO.pdb
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Negocio\obj\Debug\Negocio.pdb

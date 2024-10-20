@@ -44,7 +44,7 @@ namespace Vistas
             }
             else
             {
-                //completar
+                lblMensaje.Text = "Hubo un Error al Agregar la Sucursal";
             }
         }
     }
