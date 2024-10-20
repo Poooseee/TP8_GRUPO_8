@@ -39,6 +39,8 @@ namespace Vistas
                 txtDescripcion.Text = "";
                 ddlProvincia.SelectedIndex = 0;
                 txtDireccion.Text = "";
+
+                lblMensaje.Text = "La sucursal se ha agregado con éxito";
             }
             else
             {

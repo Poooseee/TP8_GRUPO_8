@@ -10,6 +10,7 @@ namespace DAO
     public class DaoSucursales
     {
         AccesoDatos ad = new AccesoDatos();
+
         public DataTable obtenerTablaSucursales()
         {
             string consulta = "Select Id_Sucursal, NombreSucursal,DescripcionSucursal,DescripcionProvincia,DireccionSucursal FROM Sucursal " +
@@ -33,6 +34,14 @@ namespace DAO
                 " WHERE Id_Sucursal = " + idSucursal;
 
             return ad.obtenerTabla("gvSucursales", consulta);
+        }
+
+        public int eliminarSucursal(int idSucursal)
+        {
+            AccesoDatos ad = new AccesoDatos();
+
+            string consulta = "DELETE FROM Sucursal WHERE Id_Sucursal = " + idSucursal;
+            return ad.EjecutarConsulta(consulta);
         }
     }
 }

@@ -27,8 +27,15 @@ namespace Vistas
         {
             if (txtSucursal.Text.Trim().Length > 0)
             {
+                int id = int.Parse(txtSucursal.Text);
+
                 NegocioSucursal negocioSucursal = new NegocioSucursal();
-                //completar
+                DataTable dt = new DataTable();
+
+                dt = negocioSucursal.buscarSucursalPorID(id);
+                gvSucursales.DataSource = dt;
+                gvSucursales.DataBind();
+
                 txtSucursal.Text = "";
             }
         }

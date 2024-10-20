@@ -46,11 +46,12 @@ namespace DAO
             SqlDataAdapter adap = obtenerAdaptador(sql, cn);
             DataSet ds = new DataSet();
 
-            adap.Fill(ds , "nombreTabla");
+            adap.Fill(ds , nombreTabla);
             cn.Close();
 
-            return ds.Tables["nombreTabla"];
+            return ds.Tables[nombreTabla];
         }
+
         public bool existe(string consultaSQL)
         {
 
@@ -63,6 +64,7 @@ namespace DAO
             }
             else { return false; }
         }
+
         public int EjecutarConsulta(string consultaSQL)
         {
             SqlConnection conn = new SqlConnection(rutaDB);

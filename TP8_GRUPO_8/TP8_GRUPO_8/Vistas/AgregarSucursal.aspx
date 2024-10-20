@@ -93,6 +93,8 @@
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style8">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+                    &nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>

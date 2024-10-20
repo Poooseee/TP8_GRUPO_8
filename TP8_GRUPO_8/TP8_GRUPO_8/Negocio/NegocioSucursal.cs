@@ -35,5 +35,35 @@ namespace Negocio
             DaoSucursales daoSucursales=new DaoSucursales();
             return daoSucursales.buscarSucursalPorID(idSucursal);
         }
+
+        public int eliminarSucursal(int idSucursal)
+        {
+            string sql = "SELECT 1 FROM NombreDeLaTabla WHERE IdSucursal = " + idSucursal;
+
+            int filas;
+            AccesoDatos ad = new AccesoDatos();
+            DaoSucursales ds = new DaoSucursales();
+
+            bool existe = ad.existe(sql);
+
+            if (existe)
+            {
+                filas = ds.eliminarSucursal(idSucursal);
+
+                if(filas == 1)
+                {
+                    return 1; //SE PUDO ELIMINAR
+                }
+                else
+                {
+                    return 0; //NO SE PUDO ELIMINAR
+                }
+            }
+            else
+            {
+                //NO EXISTE UNA SUCURSAL CON ESE ID
+                return 0;
+            }
+        }
     }
 }

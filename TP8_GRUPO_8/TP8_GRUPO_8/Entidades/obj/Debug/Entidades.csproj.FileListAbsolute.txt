@@ -10,3 +10,9 @@ C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\ob
 C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.dll
 C:\Users\agust\Documents\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\bin\Debug\Entidades.dll
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.dll
+C:\Users\Administrator\Downloads\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\Entidades\obj\Debug\Entidades.pdb
