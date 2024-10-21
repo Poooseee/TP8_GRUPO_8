@@ -15,10 +15,10 @@ namespace Negocio
         {
 
         }
-
+        DaoSucursales daoSucursales = new DaoSucursales();
         public DataTable ObtenerTablaSucursales()
         {
-            DaoSucursales daoSucursales = new DaoSucursales();
+            
             return daoSucursales.obtenerTablaSucursales();
         }
 
@@ -44,25 +44,22 @@ namespace Negocio
         
         public DataTable buscarSucursalPorID(int idSucursal)
         {
-            DaoSucursales daoSucursales=new DaoSucursales();
             return daoSucursales.buscarSucursalPorID(idSucursal);
         }
 
         public DataTable buscarSucursalPorProvincia(int idProvincia)
         {
-            DaoSucursales daoSuc = new DaoSucursales();
-            return daoSuc.buscarSucursalPorProvincia(idProvincia);
+            return daoSucursales.buscarSucursalPorProvincia(idProvincia);
         }
 
         public int eliminarSucursal(int idSucursal)
         {
             int filas;  
-            DaoSucursales ds = new DaoSucursales();
-            bool existe = ds.ExisteSucursal(idSucursal);
+            bool existe = daoSucursales.ExisteSucursal(idSucursal);
 
             if (existe)
             {
-                filas = ds.eliminarSucursal(idSucursal);
+                filas = daoSucursales.eliminarSucursal(idSucursal);
 
                 if(filas == 1)
                 {

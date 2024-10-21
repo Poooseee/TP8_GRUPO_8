@@ -46,13 +46,17 @@ namespace Vistas
                 if (txtSucursal.Text.Trim().Length > 0)
                 {
                     lblDDL.Text = "No puede buscar por ID y PROVINCIA al mismo tiempo";
+                    ddlProvincia.SelectedIndex = 0;
+                    txtSucursal.Text = "";
                     return;
                 }
                 else
                 {
                     NegocioSucursal negocioSucursal = new NegocioSucursal();
                     DataTable dt = new DataTable();
-                    //funcion y llenar tabla
+                    dt = negocioSucursal.buscarSucursalPorProvincia(ddlProvincia.SelectedIndex);
+                    gvSucursales.DataSource = dt;
+                    gvSucursales.DataBind();
                     ddlProvincia.SelectedIndex = 0;
                 }
             }

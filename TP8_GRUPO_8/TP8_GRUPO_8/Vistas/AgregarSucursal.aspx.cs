@@ -44,7 +44,11 @@ namespace Vistas
             NegocioSucursal negSuc = new NegocioSucursal();
             int IdProvincia = int.Parse(ddlProvincia.SelectedValue);
             filas = negSuc.agregarSucursal(txtNombre.Text, txtDescripcion.Text, IdProvincia, txtDireccion.Text);
-            //falta verificar los valores que devuelven las filas
+            if (filas > 0)
+            {
+                lblMensaje.Text = "Se agrego la sucursal correctamente";
+            }
+            else lblMensaje.Text = "La sucursal ya existe";
             limpiarCargaSucursal();
         }
     }

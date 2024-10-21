@@ -25,10 +25,9 @@ namespace DAO
 
         public int AgregarSucursal(Sucursal suc)
         {
-            AccesoDatos accesoDatos = new AccesoDatos();
             string consultaAgregarSucursal = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
                "VALUES ('" + suc.NombreSucursal1 + "','" + suc.DescripcionSucursal1 + "'," + suc.IdProvinciaSucursal1 + ",'" + suc.DireccionSucursal1 + "')";
-            return accesoDatos.EjecutarConsulta(consultaAgregarSucursal);
+            return ad.EjecutarConsulta(consultaAgregarSucursal);
         }
         public bool VerificarSucursal(Sucursal suc)
         {
@@ -39,7 +38,6 @@ namespace DAO
         }
         public DataTable buscarSucursalPorID(int idSucursal)
         {
-            AccesoDatos ad = new AccesoDatos();
             string consulta = "SELECT Id_Sucursal,NombreSucursal,DescripcionSucursal,DescripcionProvincia,DireccionSucursal\r\nFROM Sucursal INNER JOIN Provincia\r\nON Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia\r\nWHERE Id_Sucursal = " + idSucursal;
 
             return ad.obtenerTabla("gvSucursales", consulta);
@@ -53,8 +51,6 @@ namespace DAO
 
         public int eliminarSucursal(int idSucursal)
         {
-            AccesoDatos ad = new AccesoDatos();
-
             string consulta = "DELETE FROM Sucursal WHERE Id_Sucursal = " + idSucursal;
             return ad.EjecutarConsulta(consulta);
         }
