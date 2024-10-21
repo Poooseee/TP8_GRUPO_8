@@ -1,6 +1,7 @@
 ﻿using Negocio;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -19,13 +20,26 @@ namespace Vistas
         {
             NegocioSucursal negSuc = new NegocioSucursal();
             int idSucursal = int.Parse(txtIdSucursal.Text);
-           
-            negSuc.eliminarSucursal(idSucursal);
 
-            //MOSTRAR ESTO UNICAMENTE SI LA SUCURSAL EXISTE
-            lblEliminado.Text = "La sucursal ha sido eliminada";
-
-            //HAY QUE VERIFICAR SI LA SUCURSAL EXISTE, Y NOTIFICAR SI NO ES ASÍ CON EL LBL DE ARRIBA
+            switch (negSuc.eliminarSucursal(idSucursal))
+            {
+                //SE PUDO ELIMINAR
+                case 1:
+                    lblEliminado.Text = "La sucursal ha sido eliminada";
+                    lblEliminado.ForeColor = Color.Green;
+                    txtIdSucursal.Text = "";
+                    break;
+                //NO SE PUDO ELIMINAR
+                case -1:
+                    lblEliminado.Text = "Hubo un problema para eliminar la sucursal";
+                    txtIdSucursal.Text = "";
+                    break;
+                //NO EXISTE LA SUCURSAL
+                case 0:
+                    lblEliminado.Text = "La sucursal buscada no existe";
+                    txtIdSucursal.Text = "";
+                    break;
+            }
         }
     }
 }

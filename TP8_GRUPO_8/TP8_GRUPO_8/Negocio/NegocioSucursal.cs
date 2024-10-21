@@ -31,14 +31,27 @@ namespace Negocio
             suc.IdProvinciaSucursal1 = IdProvinciaSucursal;
             suc.DireccionSucursal1 = DireccionSucursal;
             DaoSucursales Ds = new DaoSucursales();
-            filas = Ds.AgregarSucursal(suc);
-            return filas;
+
+            //Si no encuentra ninguna sucursal, sigue
+            if (!Ds.VerificarSucursal(suc))
+            {
+                filas = Ds.AgregarSucursal(suc);
+                return filas;
+            }
+            //Si ya existe una sucursal, devuelve 0
+            return 0;
         }
         
         public DataTable buscarSucursalPorID(int idSucursal)
         {
             DaoSucursales daoSucursales=new DaoSucursales();
             return daoSucursales.buscarSucursalPorID(idSucursal);
+        }
+
+        public DataTable buscarSucursalPorProvincia(int idProvincia)
+        {
+            DaoSucursales daoSuc = new DaoSucursales();
+            return daoSuc.buscarSucursalPorProvincia(idProvincia);
         }
 
         public int eliminarSucursal(int idSucursal)

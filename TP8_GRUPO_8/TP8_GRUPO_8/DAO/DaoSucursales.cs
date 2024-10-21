@@ -30,14 +30,24 @@ namespace DAO
                "VALUES ('" + suc.NombreSucursal1 + "','" + suc.DescripcionSucursal1 + "'," + suc.IdProvinciaSucursal1 + ",'" + suc.DireccionSucursal1 + "')";
             return accesoDatos.EjecutarConsulta(consultaAgregarSucursal);
         }
-
+        public bool VerificarSucursal(Sucursal suc)
+        {
+            string consultaVerificarSucursal = "SELECT * FROM Sucursal WHERE " +
+                "NombreSucursal = '" + suc.NombreSucursal1 + "' AND Id_ProvinciaSucursal = " + suc.IdProvinciaSucursal1 + " AND " +
+                "DireccionSucursal = '" + suc.DireccionSucursal1 + "'";
+            return ad.existe(consultaVerificarSucursal);
+        }
         public DataTable buscarSucursalPorID(int idSucursal)
         {
             AccesoDatos ad = new AccesoDatos();
-            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE," +
-                "DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal" +
-                " WHERE Id_Sucursal = " + idSucursal;
+            string consulta = "SELECT Id_Sucursal,NombreSucursal,DescripcionSucursal,DescripcionProvincia,DireccionSucursal\r\nFROM Sucursal INNER JOIN Provincia\r\nON Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia\r\nWHERE Id_Sucursal = " + idSucursal;
 
+            return ad.obtenerTabla("gvSucursales", consulta);
+        }
+
+        public DataTable buscarSucursalPorProvincia(int IdProvincia)
+        {
+            string consulta = "SELECT Id_Sucursal,NombreSucursal,DescripcionSucursal,DescripcionProvincia,DireccionSucursal\r\nFROM Sucursal INNER JOIN Provincia\r\nON Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia\r\nWHERE Id_Provincia = " + IdProvincia;
             return ad.obtenerTabla("gvSucursales", consulta);
         }
 

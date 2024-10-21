@@ -19,6 +19,13 @@ namespace Vistas
                 cargarProvinciasAlDDL();
             }
         }
+        private void limpiarCargaSucursal()
+        {
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
+            ddlProvincia.SelectedIndex = 0;
+            txtDireccion.Text = "";
+        }
         public void cargarProvinciasAlDDL()
         {
             NegocioProvincia prov = new NegocioProvincia();
@@ -37,19 +44,8 @@ namespace Vistas
             NegocioSucursal negSuc = new NegocioSucursal();
             int IdProvincia = int.Parse(ddlProvincia.SelectedValue);
             filas = negSuc.agregarSucursal(txtNombre.Text, txtDescripcion.Text, IdProvincia, txtDireccion.Text);
-            if (filas > 0)
-            {
-                txtNombre.Text = "";
-                txtDescripcion.Text = "";
-                ddlProvincia.SelectedIndex = 0;
-                txtDireccion.Text = "";
-
-                lblMensaje.Text = "La sucursal se ha agregado con éxito";
-            }
-            else
-            {
-                lblMensaje.Text = "Hubo un Error al Agregar la Sucursal";
-            }
+            //falta verificar los valores que devuelven las filas
+            limpiarCargaSucursal();
         }
     }
 }

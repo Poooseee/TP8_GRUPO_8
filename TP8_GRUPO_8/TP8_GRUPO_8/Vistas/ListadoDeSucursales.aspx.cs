@@ -16,7 +16,19 @@ namespace Vistas
             if (!IsPostBack)
             {
                 cargarTodasLasSucursales();
+                cargarProvinciasAlDDL();
             }
+        }
+        public void cargarProvinciasAlDDL()
+        {
+            NegocioProvincia prov = new NegocioProvincia();
+            DataTable dt = new DataTable();
+            dt = prov.obtenerTablaProvincias();
+            ddlProvincia.DataSource = dt;
+            ddlProvincia.DataTextField = "DescripcionProvincia";
+            ddlProvincia.DataValueField = "ID_Provincia";
+            ddlProvincia.DataBind();
+            ddlProvincia.Items.Insert(0, new ListItem("Seleccione una provincia", "0"));
         }
         public void cargarTodasLasSucursales()
         {
@@ -29,13 +41,27 @@ namespace Vistas
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
+            if(ddlProvincia.SelectedIndex != 0)
+            {
+                if (txtSucursal.Text.Trim().Length > 0)
+                {
+                    lblDDL.Text = "No puede buscar por ID y PROVINCIA al mismo tiempo";
+                    return;
+                }
+                else
+                {
+                    NegocioSucursal negocioSucursal = new NegocioSucursal();
+                    DataTable dt = new DataTable();
+                    //funcion y llenar tabla
+                    ddlProvincia.SelectedIndex = 0;
+                }
+            }
             if (txtSucursal.Text.Trim().Length > 0)
             {
                 int id = int.Parse(txtSucursal.Text);
 
                 NegocioSucursal negocioSucursal = new NegocioSucursal();
                 DataTable dt = new DataTable();
-
                 dt = negocioSucursal.buscarSucursalPorID(id);
                 gvSucursales.DataSource = dt;
                 gvSucursales.DataBind();
@@ -49,5 +75,7 @@ namespace Vistas
             cargarTodasLasSucursales();
            
         }
+
+      
     }
 }

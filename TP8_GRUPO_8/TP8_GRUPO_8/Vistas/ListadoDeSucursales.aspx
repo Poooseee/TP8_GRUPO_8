@@ -29,6 +29,7 @@
         }
         .auto-style10 {
             width: 200px;
+            height: 30px;
         }
         .auto-style11 {
             width: 100%;
@@ -36,6 +37,17 @@
         }
         .auto-style12 {
             width: 203px;
+        }
+        .auto-style13 {
+            width: 203px;
+            height: 30px;
+        }
+        .auto-style14 {
+            width: 204px;
+            height: 30px;
+        }
+        .auto-style15 {
+            height: 30px;
         }
         </style>
 </head>
@@ -60,17 +72,31 @@
         </div>
         <table class="auto-style11">
             <tr>
-                <td class="auto-style12">
+                <td class="auto-style13">
                     <asp:Label ID="lblBusqueda" runat="server" Text="Busqueda Ingrese ID Sucursal:"></asp:Label>
                 </td>
-                <td class="auto-style7">
+                <td class="auto-style14">
                     <asp:TextBox ID="txtSucursal" runat="server" Width="173px"></asp:TextBox>
                 </td>
                 <td class="auto-style10">
                     <asp:Button ID="btnFiltrar" runat="server" CssClass="auto-style8" Text="Filtrar" OnClick="btnFiltrar_Click" />
                 </td>
-                <td>
+                <td class="auto-style15">
                     <asp:Button ID="btnTodos" runat="server" CssClass="auto-style9" Text="Mostrar todos" OnClick="btnTodos_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <asp:Label ID="LabelBusquedaProv" runat="server" Text="Seleccione una Provincia:"></asp:Label>
+                </td>
+                <td class="auto-style7">
+                    <asp:DropDownList ID="ddlProvincia" runat="server" Height="16px" Width="191px">
+                    </asp:DropDownList>
+                </td>
+                <td>
+
+                    <asp:Label ID="lblDDL" runat="server"></asp:Label>
+
                 </td>
             </tr>
         </table>

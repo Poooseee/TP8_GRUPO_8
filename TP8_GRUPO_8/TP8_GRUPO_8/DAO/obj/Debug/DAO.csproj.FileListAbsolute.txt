@@ -43,3 +43,12 @@ C:\Users\USURIO\OneDrive\Escritorio\Programacion III\TPs Grupales\TP8_GRUPO_8\TP
 C:\Users\USURIO\OneDrive\Escritorio\Programacion III\TPs Grupales\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.csproj.Up2Date
 C:\Users\USURIO\OneDrive\Escritorio\Programacion III\TPs Grupales\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.dll
 C:\Users\USURIO\OneDrive\Escritorio\Programacion III\TPs Grupales\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.pdb
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\bin\Debug\DAO.dll
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\bin\Debug\DAO.pdb
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\bin\Debug\Entidades.dll
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\bin\Debug\Entidades.pdb
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.csproj.Up2Date
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.dll
+C:\Users\alejo\OneDrive\Documentos\GitHub\TP8_GRUPO_8\TP8_GRUPO_8\TP8_GRUPO_8\DAO\obj\Debug\DAO.pdb
